@@ -1,0 +1,90 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff7e6;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffcc66, #ff99cc);
+    color: white;
+}
+
+.blurb {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.hero img {
+    width: 60%;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-title {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #cc6699;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.modal img {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    border-radius: 20px;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
